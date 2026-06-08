@@ -65,10 +65,10 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4 mb-16">
           <a
             href="#projects"
-            className="px-8 py-4 font-semibold text-white rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center gap-2"
+            className=" px-8 py-4 font-semibold text-white rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center gap-2"
           >
             View My Work
-            <HiArrowRight size={20} />
+            <HiArrowRight className='bouncing' size={20} />
           </a>
 
           <a
@@ -92,10 +92,10 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { label: 'Projects', value: '6+', icon: '🚀' },
-            { label: 'Courses', value: '5+', icon: '📚' },
+            { label: 'Projects', value: '6+',    icon: '🚀' },
+            { label: 'Courses', value: '5+',     icon: '📚' },
             { label: 'Graduated', value: '2023', icon: '🎓' },
-            { label: 'Country', value: 'Egypt', icon: '🌍' }
+            { label: 'Country', value: 'Egypt',  icon: '🌍' }
           ].map((stat) => (
             <div key={stat.label} className="p-5 rounded-xl border bg-white/40 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-center">
               <div className="text-2xl">{stat.icon}</div>

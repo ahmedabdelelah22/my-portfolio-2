@@ -47,7 +47,7 @@ export default function SkillsTabs() {
                   {skills[activeTab].items.map(item => (
                     <div
                       key={item}
-                      className="group card card-hover p-4 flex items-center gap-3"
+                      className="link-underline group card card-hover p-4 flex items-center gap-3"
                     >
                       <div className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500" />
                       <span className="font-semibold text-slate-700 dark:text-slate-300">

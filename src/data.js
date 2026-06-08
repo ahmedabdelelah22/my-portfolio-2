@@ -112,6 +112,18 @@ export const education = [
     period: '2019 – 2023',
     description: 'Graduated 2023. Studied algorithms, data structures, software engineering, databases, and web technologies.',
   },
+  {
+    degree: 'Jonas Schmedtmann – The Ultimate React Course (React / Full-Stack )',
+    school: 'Self-Learning / Online Courses',
+    period: '2024 – 2025',
+    description: 'Completed 84+ hours of training covering React fundamentals, hooks, routing, API integration, authentication, Next, and full-stack project development.',
+  },
+  {
+    degree: 'The Complete Node.js Bootcamp – Jonas Schmedtmann',
+    school: 'Self-Learning / Online Courses',
+    period: '2025 – 2026',
+    description: 'Completed comprehensive training in Node.js, Express.js, MongoDB, REST APIs, Authentication & Authorization, MVC Architecture, Server-Side Rendering, and Application Deployment.',
+  },
   
 ]
 

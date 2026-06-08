@@ -39,6 +39,66 @@ body {
   .input {
     @apply w-full px-4 py-3 rounded-lg text-sm border bg-slate-50 border-slate-200 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:placeholder:text-slate-500 dark:focus:ring-blue-500/40 transition-colors;
   }
+  @keyframes bounceX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.bouncing {
+  animation: bounceX 1.5s ease-in-out infinite;
+}
+  .link-underline {
+  @apply relative overflow-hidden;;
+}
+
+.link-underline::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  transition: all 300ms ease-in-out;
+}
+
+.link-underline:hover::before {
+  width: 100%;
+}
+
+.stats-box {
+  @apply relative overflow-hidden;
+}
+
+.stats-box::before,
+.stats-box::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 0;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  transition: all 1s ease;
+}
+
+.stats-box::before {
+  right: 0;
+  top: 0;
+}
+
+.stats-box::after {
+  left: 0;
+  bottom: 0;
+}
+
+.stats-box:hover::before,
+.stats-box:hover::after {
+  height: 100%;
+}
   
 }
 
@@ -80,4 +140,6 @@ body {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
+
+
 }

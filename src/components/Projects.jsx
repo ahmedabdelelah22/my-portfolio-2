@@ -18,7 +18,7 @@ export default function Projects() {
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         {projects.map((project, i) => (
           <div key={project.name}
-            className={`card card-hover flex flex-col gap-3 fade-up delay-${(i % 3) + 1} ${inView ? 'in-view' : ''}`}>
+            className={`stats-box card card-hover flex flex-col gap-3 fade-up delay-${(i % 3) + 1} ${inView ? 'in-view' : ''}`}>
             <div className="flex justify-between items-start">
               <span className="text-2xl">{project.emoji}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full border font-medium ${badgeColors[project.badge] || badgeColors['Frontend']}`}>
