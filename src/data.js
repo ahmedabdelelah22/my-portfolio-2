@@ -1,0 +1,124 @@
+export const personal = {
+  name: 'Ahmed Abdelelah Rashad',
+  title: 'Full-Stack Web Developer',
+  email: 'ahmedabdelelah909493@gmail.com',
+  phone: '01090949310',
+  github: 'ahmedabdelelah22',
+  githubUrl: 'https://github.com/ahmedabdelelah22',
+  location: 'Mansoura, Egypt',
+  bio: "I'm a Full-Stack Web Developer based in Mansoura, Egypt, graduated from the Faculty of Computer Science & Information Technology at Mansoura University in 2023. I completed all of Jonas Schmedtmann's courses on Udemy, mastering JavaScript, React, Next.js, Node.js, Express, and MongoDB. I love building real-world applications with clean architecture and great user experiences.",
+}
+
+export const skills = [
+  {
+    category: 'Frontend',
+    icon: '🎨',
+    items: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Next.js', 'Redux', 'React Query', 'React Router', 'Tailwind CSS', 'Styled Components'],
+  },
+  {
+    category: 'Backend',
+    icon: '⚙️',
+    items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'Stripe Payments', 'Resend Email'],
+  },
+  {
+    category: 'Database',
+    icon: '🗄️',
+    items: ['MongoDB', 'Mongoose', 'PostgreSQL', 'Supabase'],
+  },
+  {
+    category: 'Tools & DevOps',
+    icon: '🛠️',
+    items: ['Git', 'GitHub', 'Railway', 'Vercel', 'Netlify', 'Vite', 'npm'],
+  },
+]
+
+export const projects = [
+  {
+    name: 'Natours',
+    emoji: '🌿',
+    description: 'Full-stack tour booking platform with user authentication, role-based access, Stripe payments, email notifications, and a RESTful API. Deployed on Railway.',
+    tech: ['Node.js', 'Express', 'MongoDB', 'Stripe', 'JWT', 'Pug'],
+    live: 'https://natours-production-b3f7.up.railway.app',
+    github: 'https://github.com/ahmedabdelelah22',
+    badge: 'Deployed',
+  },
+    {
+    name: 'Natours-React',
+    emoji: '🌿',
+    description: 'Full-stack tour booking platform with user authentication, role-based access, Stripe payments, email notifications, and a RESTful API. Deployed on Railway.',
+    tech: ['Node.js', 'Express', 'MongoDB', 'Stripe', 'JWT', 'REact'],
+    live: 'https://natours-react-psi.vercel.app/',
+    github: 'https://github.com/ahmedabdelelah22',
+    badge: 'Deployed',
+  },
+  {
+    name: 'The Wild Oasis',
+    emoji: '🏨',
+    description: 'Internal hotel management dashboard for staff to manage cabins, bookings, and guests. Features real-time data, dark mode, charts, and full CRUD operations.',
+    tech: ['React', 'Supabase', 'React Query', 'Tailwind CSS', 'Recharts'],
+    github: 'https://github.com/ahmedabdelelah22',
+    live: 'https://the-wild-oasis-six-sable.vercel.app/',
+    badge: 'Full-stack',
+  },
+  {
+    name: 'Wild Oasis Website',
+    emoji: '🌐',
+    description: 'Public-facing hotel website built with Next.js App Router, featuring SSR, cabin browsing, reservation system, and authentication via NextAuth.',
+    tech: ['Next.js', 'Tailwind CSS', 'Supabase', 'NextAuth'],
+    github: 'https://github.com/ahmedabdelelah22',
+    live: 'https://the-wild-oasis-website-yfgk.vercel.app/',
+    badge: 'Full-stack',
+  },
+  {
+    name: 'Forkify',
+    emoji: '🍴',
+    description: 'Recipe search app with bookmarking, custom recipe uploads, and servings calculator. Built with clean MVC architecture and vanilla JavaScript.',
+    tech: ['JavaScript', 'OOP', 'MVC', 'Parcel', 'REST API'],
+    github: 'https://github.com/ahmedabdelelah22',
+    badge: 'Frontend',
+  },
+  {
+    name: 'WorldWise',
+    emoji: '🗺️',
+    description: 'Interactive map-based travel tracker to log visited cities and countries worldwide, featuring geolocation and dynamic routing.',
+    tech: ['React', 'React Router', 'Context API', 'CSS Modules'],
+    github: 'https://github.com/ahmedabdelelah22',
+     live: 'https://worldwise-22.vercel.app/',
+    badge: 'Frontend ',
+  },
+  {
+    name: 'Mapty',
+    emoji: '🏃',
+    description: 'Map-based workout logger using object-oriented JavaScript, storing running and cycling workouts on an interactive Leaflet map with geolocation.',
+    tech: ['JavaScript', 'OOP', 'Leaflet.js', 'Geolocation API'],
+    github: 'https://github.com/ahmedabdelelah22',
+    badge: 'Frontend',
+  },
+]
+
+export const experience = [
+  {
+    role: 'Freelance Full-Stack Developer',
+    company: 'Self-Employed',
+    period: '2023 – Present',
+    description: 'Building and deploying full-stack web applications using React and Node.js. Developing RESTful APIs, implementing secure JWT authentication, and integrating third-party services including Stripe payments and email APIs.',
+  },
+]
+
+export const education = [
+  {
+    degree: 'B.Sc. Computer Science & Information Technology',
+    school: 'Mansoura University',
+    period: '2019 – 2023',
+    description: 'Graduated 2023. Studied algorithms, data structures, software engineering, databases, and web technologies.',
+  },
+  
+]
+
+export const courses = [
+  { title: 'The Complete JavaScript Course 2024', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
+  { title: 'Build Responsive Websites with HTML & CSS', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
+  { title: 'Node.js, Express & MongoDB Bootcamp', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
+  { title: 'Build Modern React Applications', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
+  { title: 'The Ultimate Next.js Course', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
+]

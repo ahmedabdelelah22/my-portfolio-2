@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-white text-slate-800 dark:bg-[#0F172A] dark:text-slate-200 transition-colors duration-300;
+}
+
+@layer components {
+  .section {
+    @apply py-20 px-6 md:px-16 lg:px-24 border-b border-slate-100 dark:border-slate-800;
+  }
+  .section-label {
+    @apply text-xs font-medium tracking-widest uppercase mb-2 text-slate-400 dark:text-blue-400;
+  }
+  .section-title {
+    @apply text-3xl font-semibold mb-2 text-slate-800 dark:text-white;
+  }
+  .section-sub {
+    @apply text-sm mb-10 text-slate-500 dark:text-slate-400;
+  }
+  .tag {
+    @apply text-xs px-2.5 py-1 rounded-full border bg-slate-100 text-slate-600 border-slate-200 dark:bg-slate-800 dark:text-blue-300 dark:border-slate-700;
+  }
+  .card {
+@apply rounded-2xl border p-5 bg-gray-200 border-slate-100 shadow-sm dark:bg-slate-800 dark:border-slate-700/60;  }
+  .btn-primary {
+    @apply px-6 py-2.5 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-400 transition-colors;
+  }
+  .btn-secondary {
+    @apply px-6 py-2.5 rounded-lg text-sm font-medium border border-slate-200 text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800 transition-colors;
+  }
+  .input {
+    @apply w-full px-4 py-3 rounded-lg text-sm border bg-slate-50 border-slate-200 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:placeholder:text-slate-500 dark:focus:ring-blue-500/40 transition-colors;
+  }
+  
+}
+
+ 
+
+/* ── Animations ── */
+@layer utilities {
+  .fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fade-up.delay-1 { transition-delay: 0.1s; }
+  .fade-up.delay-2 { transition-delay: 0.2s; }
+  .fade-up.delay-3 { transition-delay: 0.3s; }
+  .fade-up.delay-4 { transition-delay: 0.4s; }
+  .fade-up.delay-5 { transition-delay: 0.5s; }
+
+  .card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px -8px rgba(96, 165, 250, 0.15);
+  }
+
+  .cursor-blink::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    color: #60A5FA;
+    margin-left: 2px;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+}
