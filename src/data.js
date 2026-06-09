@@ -1,3 +1,11 @@
+import {
+  Code,
+  Globe,
+  Server,
+  Atom,
+  Layers3,
+} from "lucide-react";
+
 export const personal = {
   name: 'Ahmed Abdelelah Rashad',
   title: 'Full-Stack Web Developer',
@@ -7,8 +15,11 @@ export const personal = {
   githubUrl: 'https://github.com/ahmedabdelelah22',
   location: 'Mansoura, Egypt',
   bio: "I'm a Full-Stack Web Developer based in Mansoura, Egypt, graduated from the Faculty of Computer Science & Information Technology at Mansoura University in 2023. I completed all of Jonas Schmedtmann's courses on Udemy, mastering JavaScript, React, Next.js, Node.js, Express, and MongoDB. I love building real-world applications with clean architecture and great user experiences.",
+  linkedinUrl: 'https://linkedin.com/in/ahmed-abdelelah',
+  portfolioUrl: 'https://my-portfolio-after-update-2.vercel.app/',
+  cvUrl: '/Ahmed_Abdelelah_CV.pdf', // Place PDF in public folder
 }
-
+// https://raw.githubusercontent.com/ahmedabdelelah22/my-portfolio-2/main/public/Ahmed_Abdelelah_CV.pdf
 export const skills = [
   {
     category: 'Frontend',
@@ -103,6 +114,7 @@ export const experience = [
     period: '2023 – Present',
     description: 'Building and deploying full-stack web applications using React and Node.js. Developing RESTful APIs, implementing secure JWT authentication, and integrating third-party services including Stripe payments and email APIs.',
   },
+  
 ]
 
 export const education = [
@@ -128,9 +140,51 @@ export const education = [
 ]
 
 export const courses = [
-  { title: 'The Complete JavaScript Course 2024', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
-  { title: 'Build Responsive Websites with HTML & CSS', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
-  { title: 'Node.js, Express & MongoDB Bootcamp', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
-  { title: 'Build Modern React Applications', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
-  { title: 'The Ultimate Next.js Course', instructor: 'Jonas Schmedtmann', platform: 'Udemy' },
-]
+  {
+    title: "The Complete JavaScript Course 2024",
+    instructor: "Jonas Schmedtmann",
+    platform: "Udemy",
+    icon: Code,
+  },
+  {
+    title: "Build Responsive Websites with HTML & CSS",
+    instructor: "Jonas Schmedtmann",
+    platform: "Udemy",
+    icon: Globe,
+  },
+  {
+    title: "Node.js, Express & MongoDB Bootcamp",
+    instructor: "Jonas Schmedtmann",
+    platform: "Udemy",
+    icon: Server,
+  },
+  {
+    title: "Build Modern React Applications",
+    instructor: "Jonas Schmedtmann",
+    platform: "Udemy",
+    icon: Atom,
+  },
+  {
+    title: "The Ultimate Next.js Course",
+    instructor: "Jonas Schmedtmann",
+    platform: "Udemy",
+    icon: Layers3,
+  },
+];
+ 
+export const certifications = [
+ {
+    title: 'The Ultimate React Course 2025: React, Next.js, Redux & More',
+    instructor: 'Jonas Schmedtmann',
+    platform: 'Udemy',
+    certificateUrl: 'https://www.udemy.com/certificate/UC-2b2fe51a-2f59-4a8c-91a4-c22cbfd5b2fc/',
+    year: 2025,
+  },
+  {
+    title: 'The Complete Node.js, Express & MongoDB Bootcamp',
+    instructor: 'Jonas Schmedtmann',
+    platform: 'Udemy',
+    certificateUrl: 'https://www.udemy.com/certificate/UC-79284a8a-cfb5-4c13-b367-50f2c35b566a/',
+    year: 2026,
+  },
+];

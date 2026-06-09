@@ -1,5 +1,6 @@
 import { personal } from '../data';
 import { useInView } from '../hooks/useInView';
+import CVDownload from './CVDownload';
 import Socials from './Socials';
 
 export default function About() {
@@ -9,8 +10,10 @@ export default function About() {
       <p className="section-label">About me</p>
       <h2 className={`section-title fade-up ${inView ? 'in-view' : ''}`}>Who I am</h2>
       <div className="grid md:grid-cols-2 gap-12 mt-8">
+        <div className="flex flex-col gap-10" >
         <p className={`text-slate-500 dark:text-slate-400 leading-relaxed text-sm fade-up delay-1 ${inView ? 'in-view' : ''}`}>{personal.bio}</p>
-        
+        < CVDownload />
+        </div>
         <div className={`divide-y divide-slate-100 dark:divide-slate-800 fade-up delay-2 ${inView ? 'in-view' : ''}`}>
           {[
             { label: 'Name', value: personal.name },

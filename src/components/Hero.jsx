@@ -97,10 +97,10 @@ export default function Hero() {
             { label: 'Graduated', value: '2023', icon: '🎓' },
             { label: 'Country', value: 'Egypt',  icon: '🌍' }
           ].map((stat) => (
-            <div key={stat.label} className="p-5 rounded-xl border bg-white/40 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-center">
-              <div className="text-2xl">{stat.icon}</div>
-              <div className="text-3xl font-bold">{stat.value}</div>
-              <div className="text-sm text-slate-600">{stat.label}</div>
+            <div key={stat.label} className="link-underline p-5 rounded-xl border bg-white/40 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-center">
+              {/* <div className="text-2xl">{stat.icon}</div> */}
+              {/* <div className="text-3xl font-bold">{stat.value}</div> */}
+              <div className="text-l text-slate-600">{stat.icon} {stat.label} {stat.value}</div>
             </div>
           ))}
         </div>

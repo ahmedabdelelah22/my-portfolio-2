@@ -1,7 +1,13 @@
 import { education, courses } from "../data";
 import { useInView } from "../hooks/useInView";
 import { GraduationCap, BookOpen, Award, CheckCircle } from "lucide-react";
-
+import {
+  Code,
+  Globe,
+  Server,
+  Atom,
+  Layers3,
+} from "lucide-react";
 export default function EducationTimeline() {
   const [ref, inView] = useInView();
 
@@ -68,13 +74,14 @@ export default function EducationTimeline() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {courses.map((course, i) => (
+
             <div
               key={course.title}
               className="link-underline group relative p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-lg transition-all"
             >
               {/* Icon */}
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-white mb-4 group-hover:scale-110 transition-transform">
-                <CheckCircle size={20} />
+                <course.icon size={20} />
               </div>
 
               {/* Title */}
