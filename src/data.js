@@ -106,7 +106,48 @@ export const projects = [
     badge: 'Frontend',
   },
 ]
-
+export const portfolioProjects = [
+  {
+    title: "Portfolio Website",
+    description:
+      "Modern personal portfolio built with React, Tailwind CSS, and smooth animations.",
+    image: "/projects/portfolio.png",
+    technologies: ["React", "Tailwind", "Vite"],
+    url: "https://your-portfolio-live.com",
+    github: "https://github.com/username/portfolio",
+    featured: true,
+  },
+  {
+    title: "E-Commerce App",
+    description:
+      "Full-stack e-commerce platform with cart system, authentication, and payments.",
+    image: "/projects/ecommerce.png",
+    technologies: ["React", "Node.js", "MongoDB"],
+    url: "https://your-ecommerce-live.com",
+    github: "https://github.com/username/ecommerce",
+    featured: true,
+  },
+  {
+    title: "Blog Platform",
+    description:
+      "Markdown-based blog system with admin dashboard and dynamic posts.",
+    image: "",
+    technologies: ["Next.js", "Prisma", "PostgreSQL"],
+    url: "https://your-blog-live.com",
+    github: "https://github.com/username/blog-platform",
+    featured: true,
+  },
+  {
+    title: "Weather App",
+    description:
+      "Simple weather application using API integration and location search.",
+    image: "/projects/weather.png",
+    technologies: ["React", "API", "CSS"],
+    url: "https://your-weather-app.com",
+    github: "https://github.com/username/weather-app",
+    featured: false,
+  },
+];
 export const experience = [
   {
     role: 'Freelance Full-Stack Developer',

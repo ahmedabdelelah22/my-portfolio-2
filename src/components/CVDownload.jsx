@@ -17,14 +17,14 @@ export default function CVDownload() {
       </a>
  
       {/* View Portfolio */}
-      <a
+      {/* <a
         href={personal.portfolioUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 px-8 py-4 border-2 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white font-semibold rounded-lg hover:border-blue-600 dark:hover:border-blue-400 transition-all duration-300"
+        className="hidden  xl:inline-flex  items-center gap-2 px-8 py-4 border-2 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white font-semibold rounded-lg hover:border-blue-600 dark:hover:border-blue-400 transition-all duration-300"
       >
         View Live Portfolio
-      </a>
+      </a> */}
     </div>
   );
 }
